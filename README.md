@@ -1,11 +1,15 @@
 # This project create a real time app for facial recognition 
 
 ## How to use
+  ### 1. Preprocess facial image
   1.1 If you already have your facial image, put it in ImageRaw Folder then run Image_process.py or face_detector.py for reprocess your raw image to image that fit requirements<br />
   1.2 If you dont have your facial image, you can put your ID_card image in ID_image then run crop_personal_img.py which will crop your facial image in ID card and put it in ImageRaw Folder<br />
-  2. Push manual some information from ID card to Firebase server through AddDataToDatabase.py<br />
-  3. Run EnccodeGenerator.py to create pickle file which learn from all user's facial image and use it for main.py<br />
-  4. Run main.py (use q keyboard to terminate app)<br />
+  ### 2. Manually add ID information 
+  - Push manual some information from ID card to Firebase server through AddDataToDatabase.py<br />
+  ### 3. Learning all user's facial image
+  - Run EnccodeGenerator.py to create pickle file which learn from all user's facial image and use it for main.py<br />
+  ### 4. Run main.py 
+  - Run main.py (use q keyboard to terminate app)<br />
 
 ## Futher work
 - Create a OCR model for auto exactly extract information from user's ID card to json type then push to Firebase server <br />
